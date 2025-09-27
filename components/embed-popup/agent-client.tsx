@@ -114,9 +114,17 @@ function EmbedFixedAgentClient({ appConfig }: EmbedFixedAgentClientProps) {
             >
           <div className="flex justify-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/denixlabs-logo.svg" alt="DenixLabs Logo" className="block size-12 dark:hidden" />
+            <img
+              src="/denixlabs-logo.svg"
+              alt="DenixLabs Logo"
+              className="block size-12 dark:hidden"
+            />
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/denixlabs-logo-dark.svg" alt="DenixLabs Logo" className="hidden size-12 dark:block" />
+            <img
+              src="/denixlabs-logo-dark.svg"
+              alt="DenixLabs Logo"
+              className="hidden size-12 dark:block"
+            />
           </div>
 
               <div className="flex w-full flex-col justify-center gap-1 overflow-auto px-4 text-center">

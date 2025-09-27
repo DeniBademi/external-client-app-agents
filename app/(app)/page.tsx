@@ -9,7 +9,7 @@ export default function Page() {
       <ApplyThemeScript />
       {/* <WelcomeDynamic /> */}
       {/* Render the popup content directly on the main page */}
-      <div className="px-4 mx-auto flex min-h-screen max-w-prose flex-col justify-center py-4 md:py-20">
+      <div className="mx-auto flex min-h-screen max-w-prose flex-col justify-center px-4 py-4 md:py-20">
         <EmbedPopupAgentClient appConfig={APP_CONFIG_DEFAULTS} />
       </div>
     </div>

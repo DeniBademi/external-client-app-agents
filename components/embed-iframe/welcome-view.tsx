@@ -17,7 +17,11 @@ export const WelcomeView = ({
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/denixlabs-logo.svg" alt="LiveKit Logo" className="block size-6 dark:hidden" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/denixlabs-logo-dark.svg" alt="LiveKit Logo" className="hidden size-6 dark:block" />
+          <img
+            src="/denixlabs-logo-dark.svg"
+            alt="LiveKit Logo"
+            className="hidden size-6 dark:block"
+          />
         </div>
 
         <Button variant="primary" size="lg" onClick={onStartCall} className="w-48 font-mono">
