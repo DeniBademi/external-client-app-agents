@@ -92,7 +92,6 @@ export function Trigger({ error = false, popupOpen, onToggle }: TriggerProps) {
               >
                 <div
                   className="bg-bg1 size-5"
-
                   // webpack build throws if I use custom tailwind classes to achive this
                   style={{
                     maskImage: 'url(/denixlabs-logo.svg)',

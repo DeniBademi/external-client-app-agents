@@ -1,4 +1,5 @@
 import localFont from 'next/font/local';
+import Head from 'next/head';
 import { headers } from 'next/headers';
 import { getAppConfig, getOrigin } from '@/lib/env';
 import { cn } from '@/lib/utils';
@@ -49,7 +50,7 @@ export async function RootLayout({ children, className }: RootLayoutProps) {
 
   return (
     <html lang="en" suppressHydrationWarning className={cn('scroll-smooth', className)}>
-      <head>{styles && <style>{styles}</style>}</head>
+      <Head>{styles && <style>{styles}</style>}</Head>
       <body
         suppressHydrationWarning
         className={cn(jakartaSans.className, jakartaSans.variable, 'overflow-x-hidden antialiased')}
