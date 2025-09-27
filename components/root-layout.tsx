@@ -1,4 +1,3 @@
-import { Public_Sans } from 'next/font/google';
 import localFont from 'next/font/local';
 import { headers } from 'next/headers';
 import { getAppConfig, getOrigin } from '@/lib/env';
@@ -39,7 +38,7 @@ interface RootLayoutProps {
 export async function RootLayout({ children, className }: RootLayoutProps) {
   const hdrs = await headers();
   const origin = getOrigin(hdrs);
-  const { accent, accentDark, pageTitle, pageDescription } = await getAppConfig(origin);
+  const { accent, accentDark } = await getAppConfig(origin);
 
   const styles = [
     accent ? `:root { --primary: ${accent}; }` : '',
@@ -52,8 +51,6 @@ export async function RootLayout({ children, className }: RootLayoutProps) {
     <html lang="en" suppressHydrationWarning className={cn('scroll-smooth', className)}>
       <head>
         {styles && <style>{styles}</style>}
-        {/* <title>{pageTitle}</title>
-        <meta name="description" content={pageDescription} /> */}
       </head>
       <body
         suppressHydrationWarning
