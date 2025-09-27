@@ -6,11 +6,10 @@ export default function Page() {
   return (
     <div className="bg-background">
       <ApplyThemeScript />
-      <div className="mx-auto flex min-h-screen max-w-prose flex-col justify-center x-4 py-4 md:py-20">
+      <div className="px-4 mx-auto flex min-h-screen max-w-prose flex-col justify-center py-4 md:py-20">
         <EmbedPopupAgentClient appConfig={APP_CONFIG_DEFAULTS} />
       </div>
     </div>
   );
 }
-
 

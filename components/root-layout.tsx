@@ -49,9 +49,7 @@ export async function RootLayout({ children, className }: RootLayoutProps) {
 
   return (
     <html lang="en" suppressHydrationWarning className={cn('scroll-smooth', className)}>
-      <head>
-        {styles && <style>{styles}</style>}
-      </head>
+      <head>{styles && <style>{styles}</style>}</head>
       <body
         suppressHydrationWarning
         className={cn(jakartaSans.className, jakartaSans.variable, 'overflow-x-hidden antialiased')}
