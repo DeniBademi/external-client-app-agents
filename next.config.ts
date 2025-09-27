@@ -1,7 +1,8 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Output build artifacts to ./build instead of default .next
+  distDir: 'build',
   devIndicators: false,
 };
 
