@@ -56,6 +56,7 @@ export async function RootLayout({ children, className }: RootLayoutProps) {
         <meta name="description" content={pageDescription} /> */}
       </head>
       <body
+        suppressHydrationWarning
         className={cn(jakartaSans.className, jakartaSans.variable, 'overflow-x-hidden antialiased')}
       >
         {children}

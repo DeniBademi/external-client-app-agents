@@ -16,9 +16,7 @@ export default function useConnectionDetails() {
   const fetchConnectionDetails = useCallback(() => {
     setConnectionDetails(null);
     const url = new URL(
-      process.env.NEXT_PUBLIC_CONN_DETAILS_ENDPOINT ?? '/token',
-      // process.env.CONN_DETAILS_BASE_URL ?? 'http://localhost:8000'
-      process.env.CONN_DETAILS_BASE_URL ?? 'https://192.168.0.148:8000'
+      process.env.NEXT_PUBLIC_CONN_DETAILS_URL!
     );
     // Read agent_id from the first path segment: /<agent_id>
     try {
